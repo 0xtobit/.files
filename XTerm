@@ -1,0 +1,37 @@
+*scrollbar: false
+*faceName: monospace-10
+*locale: UTF-8
+*termName: xterm-256color
+
+*metaSendsEscape: false
+*eightBitInput: true
+
+!COLORS
+*borderColor: #343434
+*background:  #0c1e28
+*foreground:  #dddddd
+
+!black
+*color0:  #222222
+*color8:  #454545
+!red
+*color1:  #9e5641
+*color9:  #cc8968
+!green
+*color2:  #6c7e55
+*color10: #c4df90
+!yellow
+*color3:  #caaf2b
+*color11: #ffed80
+!blue
+*color4:  #2662b5
+*color12: #bdddea
+!magenta
+*color5:  #956d9d
+*color13: #c18fcb
+!cyan
+*color6:  #4c8ea1
+*color14: #6bc1d0
+!white
+*color7:  #dddddd
+*color15: #898989

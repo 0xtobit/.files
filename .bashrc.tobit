@@ -1,0 +1,33 @@
+## Prompt commands
+export PS1="\u@\h:\w \$ "
+#alias set_dir='echo $PWD | sed s@$HOME@-@'
+#alias set_prompt='PS1="$USER@`set_dir` $ "'
+#PROMPT_COMMAND="set_prompt"
+
+## Aliases for director traversal and listing
+alias .='echo $PWD'
+alias ..='cd ..'
+alias cwd='echo $PWD'
+alias home='cd ~; clear'
+alias ls='/bin/ls --color -FC'
+alias la='/bin/ls --color -aC'
+alias ll='/bin/ls --color -la'
+
+## Safety Aliases
+alias cp='cp -i -p'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias cd..='cd ..'
+alias git\?='git status'
+
+## Awesome vim terminal commands
+alias \:q='exit'
+alias \:e='vim'
+
+alias importwin="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -window window_id"
+alias importgif="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -adjoin -window window_id"
+
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+alias pacman="sudo pacman"
