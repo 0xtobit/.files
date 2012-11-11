@@ -161,7 +161,7 @@ c = get_config()
 # c.TerminalInteractiveShell.autoindent = True
 
 # 
-# c.TerminalInteractiveShell.separate_in = '\n'
+c.TerminalInteractiveShell.separate_in = ''
 
 # Enable magic commands to be called without the leading %.
 # c.TerminalInteractiveShell.automagic = True
