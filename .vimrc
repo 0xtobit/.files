@@ -38,8 +38,8 @@ vnoremap <C-J> <C-E>
 vnoremap <C-K> <C-Y>
 
 "change tabs directionaly with ^h and ^l
-nnoremap <C-H> <C-PageUp>
-nnoremap <C-L> <C-PageDown>
+nnoremap <C-h> <C-PageUp>
+nnoremap <C-l> <C-PageDown>
 
 "stretch buffers
 nnoremap + <C-W>+
@@ -51,6 +51,9 @@ nnoremap <Tab> >>
 nnoremap <S-Tab> <LT><LT>j
 vnoremap <Tab> >
 vnoremap <S-Tab> <LT>
+
+"rebind for space: prime real estate wasted by default
+nnoremap <Space> .
 
 "highlighting extra whitespace from max
 hi def link whiteSpaceError Error
