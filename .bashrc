@@ -6,7 +6,9 @@
 export EDITOR="vim"
 export PAGER="less"
 export LESS="-MqR"
+
 export CDPATH=".:..:~"
+export PATH=$PATH:/root/.gem/ruby/1.9.1/bin:.
 
 if [ -f "$HOME/.bashrc.$USER" ]; then
   source $HOME/.bashrc.$USER
