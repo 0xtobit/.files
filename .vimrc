@@ -38,8 +38,8 @@ vnoremap <C-J> <C-E>
 vnoremap <C-K> <C-Y>
 
 "change tabs directionaly with ^h and ^l
-nnoremap <C-h> <C-PageUp>
-nnoremap <C-l> <C-PageDown>
+nnoremap <C-h> gT
+nnoremap <C-l> gt
 
 "stretch buffers
 nnoremap + <C-W>+
