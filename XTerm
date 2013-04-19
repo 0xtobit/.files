@@ -1,5 +1,5 @@
 *scrollbar: false
-*faceName: monospace-10
+*faceName: inconsolata:size=12
 *locale: UTF-8
 *termName: xterm-256color
 
@@ -8,30 +8,30 @@
 
 !COLORS
 *borderColor: #343434
-*background:  #0c1e28
+*background:  #222222
 *foreground:  #dddddd
 
 !black
-*color0:  #222222
-*color8:  #454545
+*color0:  #2e3436
+*color8:  #555753
 !red
-*color1:  #9e5641
-*color9:  #cc8968
+*color1:  #cc0000
+*color9:  #ef2929
 !green
-*color2:  #6c7e55
-*color10: #c4df90
+*color2:  #4e9a06
+*color10: #8ae234
 !yellow
-*color3:  #caaf2b
-*color11: #ffed80
+*color3:  #c4a000
+*color11: #fce94f
 !blue
-*color4:  #2662b5
-*color12: #bdddea
+*color4:  #3465a4
+*color12: #729fcf
 !magenta
-*color5:  #956d9d
-*color13: #c18fcb
+*color5:  #75507b
+*color13: #ad7fa8
 !cyan
-*color6:  #4c8ea1
-*color14: #6bc1d0
+*color6:  #06989a
+*color14: #34e2e2
 !white
-*color7:  #dddddd
-*color15: #898989
+*color7:  #d3d7cf
+*color15: #eeeeec
