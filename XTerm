@@ -3,6 +3,7 @@
 *locale: UTF-8
 *termName: xterm-256color
 
+*backarrowKey: false
 *metaSendsEscape: false
 *eightBitInput: true
 
