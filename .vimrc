@@ -1,6 +1,6 @@
-
 set nu "number lines
-source $VIMRUNTIME/colors/desert.vim "colour theme not scheme
+source $VIMRUNTIME/colors/fu.vim "colour theme not scheme
+"source $VIMRUNTIME/colors/blazer.vim "colour theme not scheme
 set mouse=a "mouse functionality (like gvim!)
 set tw=0 "no wrapping text onto the next line
 set listchars+=precedes:<,extends:> "when nowrap is set-has carroots when a line extends beyond the edge
