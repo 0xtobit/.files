@@ -5,7 +5,7 @@
 
 export EDITOR="vim"
 export PAGER="less"
-export LESS="-MqR"
+export LESS="MqR"
 
 export CDPATH=".:..:~"
 export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin:.
