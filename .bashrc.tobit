@@ -31,7 +31,9 @@ alias battery="acpi -b"
 alias cd..='cd ..'
 
 ## Program shorcuts
+alias uncommitted='uncommitted -w $HOME'
 alias keybacklight='asus-kbd-backlight'
+alias backlight='asus-screen-brightness'
 alias git\?='git status -s'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
