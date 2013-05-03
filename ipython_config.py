@@ -146,7 +146,7 @@ c = get_config()
 # c.TerminalInteractiveShell.color_info = True
 
 # 
-# c.TerminalInteractiveShell.history_length = 10000
+c.TerminalInteractiveShell.history_length = 50000
 
 # Don't call post-execute functions that have failed in the past.
 # c.TerminalInteractiveShell.disable_failing_post_execute = False
@@ -203,7 +203,7 @@ c.TerminalInteractiveShell.separate_in = ''
 # c.TerminalInteractiveShell.banner1 = 'Python 2.7.3 (default, Apr 24 2012, 00:00:54) \nType "copyright", "credits" or "license" for more information.\n\nIPython 0.13.1 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython\'s features.\n%quickref -> Quick reference.\nhelp      -> Python\'s own help system.\nobject?   -> Details about \'object\', use \'object??\' for extra details.\n'
 
 # 
-# c.TerminalInteractiveShell.readline_parse_and_bind = ['tab: complete', '"\\C-l": clear-screen', 'set show-all-if-ambiguous on', '"\\C-o": tab-insert', '"\\C-r": reverse-search-history', '"\\C-s": forward-search-history', '"\\C-p": history-search-backward', '"\\C-n": history-search-forward', '"\\e[A": history-search-backward', '"\\e[B": history-search-forward', '"\\C-k": kill-line', '"\\C-u": unix-line-discard']
+c.TerminalInteractiveShell.readline_parse_and_bind = ['"\\e[B": history-search-forward', '"\\e[A": history-search-backward']
 
 # The part of the banner to be printed after the profile
 # c.TerminalInteractiveShell.banner2 = ''
