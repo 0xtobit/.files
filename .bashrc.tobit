@@ -1,5 +1,3 @@
-## For transparency
-[ -n "$XTERM_VERSION" ] && transset-df -a 0.90 >/dev/null
 
 ## Prompt commands
 export PS1="\u@\h:\w \$ "
@@ -9,6 +7,9 @@ export PS1="\u@\h:\w \$ "
 
 ## For transparency
 [ -n "$XTERM_VERSION" ] && transset-df -a 0.90 >/dev/null
+
+## PATHs
+export PATH=$HOME/local/bin:$PATH
 
 ## Aliases for director traversal and listing
 alias .='echo $PWD'
@@ -40,6 +41,7 @@ alias backlight='asus-screen-brightness'
 alias git\?='git status -s'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
+alias tintin='tintin -e "#session fl play.theforsakenlands.com 1848"'
 
 ## Awesome vim terminal commands
 alias \:q='exit'
