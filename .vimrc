@@ -48,7 +48,7 @@ nnoremap - <C-W>-
 "alternate keys for indenting/unindenting
 inoremap <S-Tab> <C-O><LT><LT>
 nnoremap <Tab> >>
-nnoremap <S-Tab> <LT><LT>j
+nnoremap <S-Tab> <LT><LT>
 vnoremap <Tab> >
 vnoremap <S-Tab> <LT>
 
