@@ -12,9 +12,9 @@ alias .='echo $PWD'
 alias ..='cd ..'
 alias cwd='echo $PWD'
 alias home='cd ~; clear'
-alias ls='/bin/ls --color -FC'
-alias la='/bin/ls --color -aC'
-alias ll='/bin/ls --color -la'
+alias ls='/bin/ls --color -FCh'
+alias la='/bin/ls --color -aCh'
+alias ll='/bin/ls --color -lah'
 
 ## Safety Aliases
 alias cp='cp -i -p'
