@@ -1,11 +1,12 @@
-## For transparency
-[ -n "$XTERM_VERSION" ] && transset-df -a 0.90 >/dev/null
 
 ## Prompt commands
 export PS1="\u@\h:\w \$ "
 #alias set_dir='echo $PWD | sed s@$HOME@-@'
 #alias set_prompt='PS1="$USER@`set_dir` $ "'
 #PROMPT_COMMAND="set_prompt"
+
+## PATHs
+export PATH=$HOME/local/bin:$PATH
 
 ## Aliases for director traversal and listing
 alias .='echo $PWD'
@@ -35,6 +36,7 @@ alias keybacklight='asus-kbd-backlight'
 alias git\?='git status -s'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
+alias tintin='tintin -e "#session fl play.theforsakenlands.com 1848"'
 
 ## Awesome vim terminal commands
 alias \:q='exit'
