@@ -43,6 +43,9 @@ export CDPATH=".:..:~"
 export PATH=$HOME/local/bin:$PATH
 export PATH=$PATH:$HOME/.gem/ruby/2.0.0/bin
 
+###############################################################################
+#                                   Aliases
+###############################################################################
 ## Aliases for director traversal and listing
 alias .='echo $PWD'
 alias ..='cd ..'
@@ -84,5 +87,20 @@ alias \:E='vim'  # common typo
 alias importwin="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -window window_id"
 alias importgif="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -adjoin -window window_id"
 
+## Key binds
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
+
+###############################################################################
+#                                Zshell options
+###############################################################################
+# Basic starting prompt
+autoload -U promptinit
+promptinit
+prompt walters
+
+autoload -U colors && colors
+
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
+setopt HIST_IGNORE_DUPS
