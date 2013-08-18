@@ -13,8 +13,8 @@ master_list = (
     ('zshrc', os.path.join(HOME, '.zshrc')),
     ('bashrc', os.path.join(HOME, '.bashrc')),
     ('bashrc.tobit', os.path.join(HOME, '.bashrc.tobit')),
-    ('vimrc', os.path.join(HOME), '.vimrc'),
-    ('tmux.conf', os.path.join(HOME), '.tmux.conf'),
+    ('vimrc', os.path.join(HOME, '.vimrc')),
+    ('tmux.conf', os.path.join(HOME, '.tmux.conf')),
     ('XTerm', os.path.join(HOME, 'XTerm')),
     ('gitignore', os.path.join(HOME, '.gitignore')),
     ('ipython_config.py',
@@ -29,7 +29,6 @@ def install(args):
     """
     # TODO better variable name?
     # NOTE assuming manage.py is in the same directory as these dotfiles
-    print(master_list)
     WD = os.path.dirname(os.path.realpath(__file__))  # working directory
     for dotfile, target in master_list:
         source = os.path.join(WD, dotfile)
@@ -50,7 +49,6 @@ def remove(args):
     """Remove any symbolic links that might have been created by the install
     function.
     """
-    print(master_list)
     for dotfile, target in master_list:
         if os.path.islink(target):
             os.remove(target)
@@ -63,10 +61,12 @@ parser = argparse.ArgumentParser(
     "master_list variable in the script if you want to add more dotfiles."
 )
 
+# TODO add verbose
 subparsers = parser.add_subparsers(title='commands')
 parser_install = subparsers.add_parser('install',
                                 help='install symbolic links for all "dot '
                                 'files" in the appropriate place')
+# TODO add force, etc. for prompt options
 parser_install.set_defaults(func=install)
 parser_remove = subparsers.add_parser('remove', aliases=['rm'], help='remove '
                                       'symbolic links for "dot files"')
