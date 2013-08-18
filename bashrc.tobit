@@ -1,9 +1,6 @@
 
 ## Prompt commands
 export PS1="\u@\h:\w \$ "
-#alias set_dir='echo $PWD | sed s@$HOME@-@'
-#alias set_prompt='PS1="$USER@`set_dir` $ "'
-#PROMPT_COMMAND="set_prompt"
 
 ## For transparency
 [ -n "$XTERM_VERSION" ] && transset-df -a 0.90 >/dev/null
