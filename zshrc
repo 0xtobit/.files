@@ -30,11 +30,14 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-## Prompt commands
-export PS1="\u@\h:\w \$ "
-
 ## For transparency
 [ -n "$XTERM_VERSION" ] && transset-df -a 0.90 >/dev/null
+
+## Environment Variables
+export EDITOR="vim"
+export PAGER="less"
+export LESS="MqR"
+export CDPATH=".:..:~"
 
 ## PATHs
 export PATH=$HOME/local/bin:$PATH
