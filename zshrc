@@ -88,8 +88,8 @@ alias importwin="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I w
 alias importgif="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -adjoin -window window_id"
 
 ## Key binds
-bindkey '\e[A' history-search-backward
-bindkey '\e[B' history-search-forward
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
 
 ###############################################################################
 #                                Zshell options
