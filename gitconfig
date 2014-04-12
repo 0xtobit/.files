@@ -1,0 +1,17 @@
+[user]
+	name = Tobit Raff
+	email = 0xtobit@gmail.com
+[credential]
+	helper = cache
+[color]
+	ui = auto
+[push]
+	default = simple
+[core]
+	excludesfiles = $HOME/.gitignore
+	excludesfile = /home/tobit/.gitignore
+[alias]
+    wdiff = diff --word-diff
+    sdiff = diff --cached
+    swdiff = diff --cached --word-diff
+    wsdiff = diff --cached --word-diff
