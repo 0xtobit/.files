@@ -4,3 +4,5 @@
 *.p
 *.vim
 *.o
+*~
+.DS_Store
