@@ -1,10 +1,14 @@
+"for pathogen
+syntax on
+execute pathogen#infect()
+filetype plugin indent on
+
 set nu "number lines
 source $VIMRUNTIME/colors/fu.vim "colour theme not scheme
 "source $VIMRUNTIME/colors/blazer.vim "colour theme not scheme
 set mouse=a "mouse functionality (like gvim!)
 set tw=0 "no wrapping text onto the next line
 set listchars+=precedes:<,extends:> "when nowrap is set-has carroots when a line extends beyond the edge
-syntax on "colours!
 set backspace=indent,eol,start "makes backspace work in Vim 7.3
 set hls "highlighting!
 set ruler "for cursor position in the bottom right corner
