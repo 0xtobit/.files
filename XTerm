@@ -1,5 +1,5 @@
 *scrollbar: false
-*faceName: inconsolata:size=12
+*faceName: menlo-powerline:size=10
 *locale: UTF-8
 *termName: xterm-256color
 
