@@ -34,6 +34,9 @@ export PAGER="less"
 export LESS="MqR"
 export CDPATH=".:..:~"
 
+# For virtualcandy
+source ~/code/virtualcandy/src/virtualcandy.zsh
+
 ###############################################################################
 #                                   Aliases
 ###############################################################################
