@@ -75,6 +75,15 @@ alias \:e='vim'
 alias \:Q='exit'  # common typo
 alias \:E='vim'  # common typo
 
+## Load zmv which is awesome.
+# Example: mmv *.cc *.cpp to rename all .cc files to .cpp
+autoload -U zmv
+alias mmv='noglob zmv -W'
+alias mcp='noglob zmv -WC'
+
+# zargs is like xargs but you can use globbing
+autoload zargs
+
 alias importwin="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -window window_id"
 alias importgif="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -adjoin -window window_id"
 
@@ -88,7 +97,16 @@ bindkey '\e[A' up-line-or-beginning-search
 bindkey '\eOB' down-line-or-beginning-search
 bindkey '\e[B' down-line-or-beginning-search
 
+## Use Ctrl-LeftArrow/RightArrow to move backward/forward on word boundaries
+bindkey "\e[1;5D" backword-word
+bindkey "\e[1;5C" backword-word
+
 bindkey -v
+
+## Modify vi style bindings to be more like Vim
+bindkey -M vicmd 'u' undo
+bindkey -M vicmd '^r' redo
+bindkey -M vicmd 'Y' vi-yank-eol
 
 ###############################################################################
 #                                Zshell options
