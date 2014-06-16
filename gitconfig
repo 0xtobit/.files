@@ -8,8 +8,7 @@
 [push]
 	default = simple
 [core]
-	excludesfiles = $HOME/.gitignore
-	excludesfile = /home/tobit/.gitignore
+	excludesfile = ~/.gitignore
 [alias]
     wdiff = diff --word-diff
     sdiff = diff --cached
