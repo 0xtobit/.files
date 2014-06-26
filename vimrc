@@ -32,6 +32,16 @@ NeoBundleCheck
 "==============================================================================
 
 
+"==============================================================================
+"                              List of Plugins
+"==============================================================================
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'nvie/vim-flake8'
+"==============================================================================
+
+
 set relativenumber "use relative line numbers
 set number " use actual line number instead of 0 (with relative)
 
