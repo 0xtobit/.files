@@ -3,7 +3,10 @@ syntax on
 execute pathogen#infect()
 filetype plugin indent on
 
-set nu "number lines
+set relativenumber "use relative line numbers
+set number " use actual line number instead of 0 (with relative)
+
+syntax on "turn on syntax highlighting
 source $VIMRUNTIME/colors/fu.vim "colour theme not scheme
 "source $VIMRUNTIME/colors/blazer.vim "colour theme not scheme
 set mouse=a "mouse functionality (like gvim!)
@@ -25,6 +28,11 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set smarttab
+
+
+" Zsh style tab completion when opening files
+set wildmode=longest,list,full
+set wildmenu
 
 "==================================================
 "rebinds
