@@ -36,9 +36,24 @@ NeoBundleCheck
 "                              List of Plugins
 "==============================================================================
 NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nvie/vim-flake8'
+"==============================================================================
+
+"==============================================================================
+"                          Lightline configuration
+"==============================================================================
+
+"let g:lightline = {
+"    \ 'colorscheme' : 'jellybeans',
+"    \ }
+set laststatus=2
+set guifont=Inconsolata-dz\ for\ Powerline
+if !has('gui_running')
+    set t_Co=256
+endif
 "==============================================================================
 
 
