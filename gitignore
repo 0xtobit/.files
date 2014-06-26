@@ -4,7 +4,10 @@
 *.p
 *.vim
 *.o
+*.so
 *~
 .DS_Store
 requirements.txt
 .venv
+tags
+*.tgz
