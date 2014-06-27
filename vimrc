@@ -40,6 +40,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nvie/vim-flake8'
+NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 "==============================================================================
 
@@ -110,9 +111,9 @@ nnoremap <C-K> <C-Y>
 vnoremap <C-J> <C-E>
 vnoremap <C-K> <C-Y>
 
-"change tabs directionaly with ^h and ^l
-nnoremap <C-h> gT
-nnoremap <C-l> gt
+"change buffers directionaly with ^h and ^l
+nnoremap <C-h> :bprevious<CR>
+nnoremap <C-l> :bnext<CR>
 
 "stretch buffers
 nnoremap + <C-W>+
