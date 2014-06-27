@@ -40,15 +40,17 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nvie/vim-flake8'
+NeoBundle 'altercation/vim-colors-solarized'
 "==============================================================================
+
 
 "==============================================================================
 "                          Lightline configuration
 "==============================================================================
 
-"let g:lightline = {
-"    \ 'colorscheme' : 'jellybeans',
-"    \ }
+let g:lightline = {
+    \ 'colorscheme' : 'solarized',
+    \ }
 set laststatus=2
 set guifont=Inconsolata-dz\ for\ Powerline
 if !has('gui_running')
@@ -57,12 +59,17 @@ endif
 "==============================================================================
 
 
+"==============================================================================
+"              Set up solarized colors and syntax highlighting
+"==============================================================================
+syntax enable "turn on syntax highlighting
+set background=dark
+colorscheme solarized
+"==============================================================================
+
 set relativenumber "use relative line numbers
 set number " use actual line number instead of 0 (with relative)
 
-syntax on "turn on syntax highlighting
-source $VIMRUNTIME/colors/fu.vim "colour theme not scheme
-"source $VIMRUNTIME/colors/blazer.vim "colour theme not scheme
 set mouse=a "mouse functionality (like gvim!)
 set tw=0 "no wrapping text onto the next line
 set listchars+=precedes:<,extends:> "when nowrap is set-has carroots when a line extends beyond the edge
