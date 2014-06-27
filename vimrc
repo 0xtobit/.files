@@ -71,7 +71,7 @@ set relativenumber "use relative line numbers
 set number " use actual line number instead of 0 (with relative)
 
 set mouse=a "mouse functionality (like gvim!)
-set tw=0 "no wrapping text onto the next line
+set tw=0 "no inserting \n to wrap text onto the next line
 set listchars+=precedes:<,extends:> "when nowrap is set-has carroots when a line extends beyond the edge
 set backspace=indent,eol,start "makes backspace work in Vim 7.3
 set hls "highlighting!
