@@ -79,6 +79,7 @@ set hls "highlighting!
 set ruler "for cursor position in the bottom right corner
 set incsearch "search begins as soon as you start typing instead of waiting for <ENTER>
 set ai! "auto indent
+set hidden "allow switching of buffers with unsaved changes
 
 set sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize,resize
 
