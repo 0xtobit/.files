@@ -14,3 +14,5 @@
     sdiff = diff --cached
     swdiff = diff --cached --word-diff
     wsdiff = diff --cached --word-diff
+    unstage = reset
+    co = checkout
