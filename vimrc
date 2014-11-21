@@ -113,6 +113,14 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 
+autocmd Filetype ruby call SetRubyOptions()
+
+function SetRubyOptions()
+    set tabstop=2
+    set softtabstop=2
+    set shiftwidth=2
+endfunction
+
 
 " Zsh style tab completion when opening files
 set wildmode=longest,list,full
