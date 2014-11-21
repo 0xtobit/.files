@@ -42,6 +42,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nvie/vim-flake8'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'scrooloose/nerdtree'
 "==============================================================================
 
 
@@ -59,6 +60,26 @@ if !has('gui_running')
 endif
 "==============================================================================
 
+
+"==============================================================================
+"                           NERDTree configuration
+"==============================================================================
+
+let g:NERDTreeWinPos = "right" " make NERDTree open on the right
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
+"==============================================================================
 
 "==============================================================================
 "              Set up solarized colors and syntax highlighting
@@ -129,6 +150,8 @@ vnoremap <S-Tab> <LT>
 
 "rebind for space: prime real estate wasted by default
 nnoremap <Space> .
+
+nnoremap <F1> :NERDTree<CR>
 
 "highlighting extra whitespace from max
 hi def link whiteSpaceError Error
