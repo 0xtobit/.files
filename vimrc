@@ -43,6 +43,7 @@ NeoBundle 'nvie/vim-flake8'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'bruno-/vim-ruby-fold'
 "==============================================================================
 
 
@@ -59,7 +60,6 @@ if !has('gui_running')
     set t_Co=256
 endif
 "==============================================================================
-
 
 "==============================================================================
 "                           NERDTree configuration
@@ -114,11 +114,13 @@ set shiftwidth=4
 set smarttab
 
 autocmd Filetype ruby call SetRubyOptions()
+autocmd Filetype eruby call SetRubyOptions()
 
 function SetRubyOptions()
     set tabstop=2
     set softtabstop=2
     set shiftwidth=2
+    set tw=99
 endfunction
 
 
