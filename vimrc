@@ -163,7 +163,6 @@ nnoremap <Space> .
 
 nnoremap <F1> :NERDTree<CR>
 
-"highlighting extra whitespace from max
-hi def link whiteSpaceError Error
-autocmd Syntax * syn match whiteSpaceError "\(\S\| \)\@<=\t\+"
-autocmd Syntax * syn match whiteSpaceError "\s\+\%#\@<!$"
+"highlighting extra whitespace
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+match ExtraWhitespace /\s\+\%#\@<!$/
