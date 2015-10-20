@@ -9,6 +9,7 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [alias]
     wdiff = diff --word-diff
     sdiff = diff --cached
@@ -16,3 +17,4 @@
     wsdiff = diff --cached --word-diff
     unstage = reset
     co = checkout
+    rbdiff = diff --no-color --full-index --ignore-submodules --no-ext-diff
