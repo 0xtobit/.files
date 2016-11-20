@@ -89,6 +89,12 @@ set background=dark
 colorscheme solarized
 "==============================================================================
 
+"==============================================================================
+"                            Ctrlp configuration
+"==============================================================================
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
+"==============================================================================
+"
 set relativenumber "use relative line numbers
 set number " use actual line number instead of 0 (with relative)
 
