@@ -160,7 +160,7 @@ c.TerminalInteractiveShell.history_length = 50000
 # Autoindent IPython code entered interactively.
 # c.TerminalInteractiveShell.autoindent = True
 
-# 
+#
 c.TerminalInteractiveShell.separate_in = ''
 
 # Enable magic commands to be called without the leading %.
@@ -169,7 +169,7 @@ c.TerminalInteractiveShell.separate_in = ''
 # Deprecated, use PromptManager.in2_template
 # c.TerminalInteractiveShell.prompt_in2 = '   .\\D.: '
 
-# 
+#
 # c.TerminalInteractiveShell.separate_out = ''
 
 # Deprecated, use PromptManager.in_template

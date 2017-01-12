@@ -120,9 +120,23 @@ function SetRubyOptions()
     set tabstop=2
     set softtabstop=2
     set shiftwidth=2
-    set tw=99
+    set tw=120
 endfunction
 
+autocmd Filetype javascript call SetJavaScriptOptions()
+
+function SetJavaScriptOptions()
+    set tabstop=2
+    set softtabstop=2
+    set shiftwidth=2
+    set tw=120
+endfunction
+
+
+autocmd Filetype gitcommit call SetGitCommitOptions()
+function SetGitCommitOptions()
+    set spell
+endfunction
 
 " Zsh style tab completion when opening files
 set wildmode=longest,list,full
