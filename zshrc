@@ -36,7 +36,7 @@ export LESS="MqR"
 export CDPATH=".:..:~"
 
 # For virtualcandy
-source ~/code/virtualcandy/src/virtualcandy.zsh
+# source ~/code/virtualcandy/src/virtualcandy.zsh
 
 ###############################################################################
 #                                   Aliases
@@ -46,9 +46,9 @@ alias .='echo $PWD'
 alias ..='cd ..'
 alias cwd='echo $PWD'
 alias home='cd ~; clear'
-alias ls='/bin/ls --color -FCh'
-alias la='/bin/ls --color -aCh'
-alias ll='/bin/ls --color -lah'
+alias ls='/bin/ls -FChG'
+alias la='/bin/ls -aChG'
+alias ll='/bin/ls -lahG'
 #
 ## Sudo aliases
 alias pacman="sudo pacman"
@@ -67,8 +67,6 @@ alias git\?='git status -s'
 alias cleanbranches='git branch --merged master | grep -v master | xargs git branch -d'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
-alias tintin='tintin -r $HOME/.tintinrc'
-alias netflix='chromium --user-agent="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20120427 Firefox/15.0a1"'
 
 ## Awesome vim terminal commands
 alias \:q='exit'
@@ -114,7 +112,7 @@ bindkey -M vicmd 'Y' vi-yank-eol
 ###############################################################################
 autoload -U colors && colors
 
-source /usr/share/doc/pkgfile/command-not-found.zsh
+# source /usr/share/doc/pkgfile/command-not-found.zsh
 
 setopt HIST_IGNORE_DUPS
 
@@ -122,19 +120,27 @@ setopt HIST_IGNORE_DUPS
 #                                  Oh-My-Zsh
 ##############################################################################
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="gianu"
+# ZSH_THEME="gianu"
 #ZSH_THEME="fox"
 #ZSH_THEME="sporty_256"
 #ZSH_THEME="wezm"
 #ZSH_THEME="wezm+"
 
-plugins=(git)
+# plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
+
+##############################################################################
+
+##############################################################################
+#                                  Pure
+##############################################################################
+autoload -U promptinit; promptinit
+prompt pure
 
 ##############################################################################
 
@@ -151,3 +157,7 @@ alias cp='cp -i -p'
 alias mv='mv -i'
 alias rm='rm -i -v'
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Add Postgres commands
+export NVM_DIR="$HOME/.nvm"
