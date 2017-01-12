@@ -64,7 +64,7 @@ alias uncommitted='uncommitted -w $HOME'
 alias keybacklight='asus-kbd-backlight'
 alias backlight='asus-screen-brightness'
 alias git\?='git status -s'
-alias cleanbranches='git branch --merged master | grep -v master | xargs git branch -d'
+alias cleanbranches='git branch --merged | grep -v \"\*\" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
 
@@ -83,7 +83,7 @@ alias mcp='noglob zmv -WC'
 # zargs is like xargs but you can use globbing
 autoload zargs
 
-alias importwin="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -window window_id"
+alias importwin="xprop | grep WM_NAME\(UTF8_STRING\) | grep -oP '\".*\"' | xargs -I window_id import -window window_id"
 alias importgif="xprop | grep WM_NAME\(STRING\) | grep -oP '\".*\"' | xargs -I window_id import -adjoin -window window_id"
 
 ## History search partial completion
@@ -157,7 +157,7 @@ alias cp='cp -i -p'
 alias mv='mv -i'
 alias rm='rm -i -v'
 
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Add Postgres commands
 export NVM_DIR="$HOME/.nvm"
+$HOME/local/bin/fortune.py --patriotic
