@@ -37,6 +37,7 @@ export CDPATH=".:..:~"
 
 # For virtualcandy
 # source ~/code/virtualcandy/src/virtualcandy.zsh
+source ~/.secret_sauce
 
 ###############################################################################
 #                                   Aliases
