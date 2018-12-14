@@ -84,6 +84,7 @@ endfunction
 "==============================================================================
 "              Set up solarized colors and syntax highlighting
 "==============================================================================
+let g:solarized_termcolors=256
 syntax enable "turn on syntax highlighting
 set background=dark
 colorscheme solarized

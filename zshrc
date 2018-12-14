@@ -121,27 +121,28 @@ setopt HIST_IGNORE_DUPS
 #                                  Oh-My-Zsh
 ##############################################################################
 # Path to your oh-my-zsh configuration.
-# ZSH=$HOME/.oh-my-zsh
+ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# ZSH_THEME="gianu"
+#ZSH_THEME="gianu"
 #ZSH_THEME="fox"
 #ZSH_THEME="sporty_256"
 #ZSH_THEME="wezm"
 #ZSH_THEME="wezm+"
+ZSH_THEME="refined"
 
-# plugins=(git)
+plugins=(git)
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 ##############################################################################
 
 ##############################################################################
 #                                  Pure
 ##############################################################################
-autoload -U promptinit; promptinit
-prompt pure
+autoload -Uz promptinit
+promptinit
 
 ##############################################################################
 
@@ -159,6 +160,7 @@ alias mv='mv -i'
 alias rm='rm -i -v'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Add Postgres commands
 export NVM_DIR="$HOME/.nvm"
 $HOME/local/bin/fortune.py --patriotic

@@ -11,5 +11,5 @@ requirements.txt
 .venv
 tags
 *.tgz
-.a10sdk-*
 ctags
+.ruby_version
