@@ -50,7 +50,7 @@ alias home='cd ~; clear'
 alias ls='/bin/ls -FChG'
 alias la='/bin/ls -aChG'
 alias ll='/bin/ls -lahG'
-#
+
 ## Sudo aliases
 alias pacman="sudo pacman"
 alias mount="sudo mount"
@@ -59,6 +59,9 @@ alias battery="acpi -b"
 
 ## Typo aliases
 alias cd..='cd ..'
+
+## Rails aliases
+alias be\!\!="bundle exec \!\!"
 
 ## Program shorcuts
 alias uncommitted='uncommitted -w $HOME'
