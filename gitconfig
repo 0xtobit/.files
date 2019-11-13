@@ -16,5 +16,6 @@
     swdiff = diff --cached --word-diff
     wsdiff = diff --cached --word-diff
     unstage = reset
+    branch = --no-pager branch
     co = checkout
     rbdiff = diff --no-color --full-index --ignore-submodules --no-ext-diff

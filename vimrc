@@ -93,7 +93,7 @@ colorscheme solarized
 "==============================================================================
 "                            Ctrlp configuration
 "==============================================================================
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/public\/_next/*
 "==============================================================================
 "
 set relativenumber "use relative line numbers

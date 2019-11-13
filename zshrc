@@ -61,16 +61,19 @@ alias battery="acpi -b"
 alias cd..='cd ..'
 
 ## Rails aliases
-alias be\!\!="bundle exec \!\!"
+alias be="bundle exec"
 
 ## Program shorcuts
 alias uncommitted='uncommitted -w $HOME'
 alias keybacklight='asus-kbd-backlight'
 alias backlight='asus-screen-brightness'
 alias git\?='git status -s'
+alias 'gitbranch'='git branch | cat'
+alias 'gitb'='git branch | cat'
 alias cleanbranches='git branch --merged | grep -v \"\*\" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
+alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 
 ## Awesome vim terminal commands
 alias \:q='exit'
@@ -162,8 +165,10 @@ alias cp='cp -i -p'
 alias mv='mv -i'
 alias rm='rm -i -v'
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-eval "$(rbenv init -)"
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#eval "$(rbenv init -)"
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Add Postgres commands
 export NVM_DIR="$HOME/.nvm"
 $HOME/local/bin/fortune.py --patriotic
