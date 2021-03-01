@@ -171,4 +171,8 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Add Postgres commands
 export NVM_DIR="$HOME/.nvm"
-$HOME/local/bin/fortune.py --patriotic
+TERMINAL_FLAVOR='$HOME/local/bin/fortune.py'
+#FILE=/etc/resolv.conf
+if test -f "$TERMINAL_FLAVOR"; then
+    echo "$TERMINAL_FLAVOR exists."
+fi
