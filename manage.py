@@ -7,7 +7,6 @@ import os.path
 
 # Master list of dotfiles that manage.py is charged with managing.
 HOME = os.environ['HOME']
-global MAIN_LIST
 MAIN_LIST = (
     ('inputrc', os.path.join(HOME, '.inputrc')),
     ('zshrc', os.path.join(HOME, '.zshrc')),
@@ -23,7 +22,7 @@ MAIN_LIST = (
 )
 
 
-def install(args):
+def install(args, MAIN_LIST=MAIN_LIST):
     """Check for symlinks, creating them if they don't exist or prompt to
     remove them and replace them if they do.
     """
@@ -59,9 +58,9 @@ def bt_install(args):
         #('ipython_config.py', os.path.join(HOME,'.config/ipython/profile_default/ipython_config.py'))
         # (name of dotfile in directory with manage.py, destination for symlink)
     )
-    install(args)
+    install(args, MAIN_LIST)
 
-def remove(args):
+def remove(args, MAIN_LIST=MAIN_LIST):
     """Remove any symbolic links that might have been created by the install
     function.
     """
