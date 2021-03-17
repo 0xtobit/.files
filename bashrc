@@ -13,3 +13,9 @@ export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin:.
 if [ -f "$HOME/.bashrc.$USER" ]; then
   source $HOME/.bashrc.$USER
 fi
+
+if [ -f "$HOME/.aliases.bashrc" ]; then
+  source $HOME/.aliases.bashrc
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

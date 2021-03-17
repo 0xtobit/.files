@@ -21,7 +21,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 
-call neobundle#end()
 
 " Required:
 filetype plugin indent on
@@ -44,6 +43,7 @@ NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bruno-/vim-ruby-fold'
+call neobundle#end()
 "==============================================================================
 
 
@@ -84,6 +84,7 @@ endfunction
 "==============================================================================
 "              Set up solarized colors and syntax highlighting
 "==============================================================================
+let g:solarized_termcolors=256
 syntax enable "turn on syntax highlighting
 set background=dark
 colorscheme solarized
@@ -92,7 +93,7 @@ colorscheme solarized
 "==============================================================================
 "                            Ctrlp configuration
 "==============================================================================
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/public\/_next/*
 "==============================================================================
 "
 set relativenumber "use relative line numbers
@@ -186,3 +187,6 @@ nnoremap <F1> :NERDTree<CR>
 "highlighting extra whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 match ExtraWhitespace /\s\+\%#\@<!$/
+
+"for copy and paste to work on mac osx
+set clipboard=unnamed
