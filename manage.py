@@ -48,8 +48,6 @@ def bt_install(args):
     MAIN_LIST = (
         ('inputrc', os.path.join(HOME, '.inputrc')),
         ('zshrc', os.path.join(HOME, '.zshrc.traff')),
-        ('bashrc', os.path.join(HOME, '.bashrc')),
-        ('bashrc.tobit', os.path.join(HOME, '.bashrc.traff')),
         ('vimrc', os.path.join(HOME, '.vimrc.traff')),
         ('tmux.conf', os.path.join(HOME, '.tmux.traff.conf')),
         ('XTerm', os.path.join(HOME, 'XTerm')),
