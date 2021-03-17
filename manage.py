@@ -17,8 +17,8 @@ master_list = (
     ('tmux.conf', os.path.join(HOME, '.tmux.conf')),
     ('XTerm', os.path.join(HOME, 'XTerm')),
     ('gitignore', os.path.join(HOME, '.gitignore')),
-    ('ipython_config.py',
-        os.path.join(HOME,'.config/ipython/profile_default/ipython_config.py'))
+    ('gitconfig', os.path.join(HOME, '.gitconfig'))
+    #('ipython_config.py', os.path.join(HOME,'.config/ipython/profile_default/ipython_config.py'))
     # (name of dotfile in directory with manage.py, destination for symlink)
 )
 
