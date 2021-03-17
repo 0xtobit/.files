@@ -35,9 +35,9 @@ export PAGER="less"
 export LESS="MqR"
 export CDPATH=".:..:~"
 
-# For virtualcandy
-# source ~/code/virtualcandy/src/virtualcandy.zsh
-source ~/.secret_sauce
+if [ -f "$HOME/.secret_sauce" ]; then
+  source ~/.secret_sauce
+fi
 
 ###############################################################################
 #                                   Aliases
@@ -167,8 +167,10 @@ alias rm='rm -i -v'
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #eval "$(rbenv init -)"
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+if [ -f "/usr/local/share/chruby/chruby.sh" ]; then
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+fi
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Add Postgres commands
 export NVM_DIR="$HOME/.nvm"
 TERMINAL_FLAVOR='$HOME/local/bin/fortune.py'
