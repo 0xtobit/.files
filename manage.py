@@ -46,12 +46,10 @@ def bt_install(args):
     """Modify MAIN_LIST with appropriate paths before calling install
     """
     MAIN_LIST = (
-        ('inputrc', os.path.join(HOME, '.inputrc')),
-        ('zshrc', os.path.join(HOME, '.zshrc.traff')),
+        ('zshrc', os.path.join(HOME, '.zshrc_personal')),
         ('vimrc', os.path.join(HOME, '.vimrc_local')),
-        ('tmux.conf', os.path.join(HOME, '.tmux.traff.conf')),
-        ('XTerm', os.path.join(HOME, 'XTerm')),
-        ('gitignore', os.path.join(HOME, '.gitignore')), # FIXME need remove in ./setup
+        ('tmux.conf', os.path.join(HOME, '.tmux.conf')),
+        ('gitignore', os.path.join(HOME, '.gitignore_global')),
         ('gitconfig', os.path.join(HOME, '.local.gitconfig'))
         #('ipython_config.py', os.path.join(HOME,'.config/ipython/profile_default/ipython_config.py'))
         # (name of dotfile in directory with manage.py, destination for symlink)
