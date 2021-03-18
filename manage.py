@@ -48,7 +48,7 @@ def bt_install(args):
     MAIN_LIST = (
         ('inputrc', os.path.join(HOME, '.inputrc')),
         ('zshrc', os.path.join(HOME, '.zshrc.traff')),
-        ('vimrc', os.path.join(HOME, '.vimrc.traff')),
+        ('vimrc', os.path.join(HOME, '.vimrc_local')),
         ('tmux.conf', os.path.join(HOME, '.tmux.traff.conf')),
         ('XTerm', os.path.join(HOME, 'XTerm')),
         ('gitignore', os.path.join(HOME, '.gitignore')), # FIXME need remove in ./setup
