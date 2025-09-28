@@ -19,3 +19,7 @@
     branch = --no-pager branch
     co = checkout
     rbdiff = diff --no-color --full-index --ignore-submodules --no-ext-diff
+[init]
+	defaultBranch = main
+[safe]
+	directory = /mnt/tobit/*

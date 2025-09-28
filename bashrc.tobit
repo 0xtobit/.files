@@ -25,6 +25,7 @@ alias rm='rm -i'
 
 ## Sudo aliases
 alias pacman="sudo pacman"
+alias apt="sudo apt"
 alias mount="sudo mount"
 alias umount="sudo umount"
 alias battery="acpi -b"
@@ -40,6 +41,8 @@ alias git\?='git status -s'
 alias tmux\?='tmux list-sessions'
 alias tmux\!='tmux attach -t'
 alias tintin='tintin -e "#session fl play.theforsakenlands.com 1848"'
+alias vpy='/home/tobit/vpy/bin/python3'
+alias vpip='/home/tobit/vpy/bin/pip3'
 
 ## Awesome vim terminal commands
 alias \:q='exit'

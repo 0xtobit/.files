@@ -53,6 +53,7 @@ alias ll='/bin/ls -lahG'
 
 ## Sudo aliases
 alias pacman="sudo pacman"
+alias apt="sudo apt"
 alias mount="sudo mount"
 alias umount="sudo umount"
 alias battery="acpi -b"
@@ -80,6 +81,9 @@ alias \:q='exit'
 alias \:e='vim'
 alias \:Q='exit'  # common typo
 alias \:E='vim'  # common typo
+
+alias vpy='/home/tobit/vpy/bin/python3'
+alias vpip='/home/tobit/vpy/bin/pip3'
 
 ## Load zmv which is awesome.
 # Example: mmv *.cc *.cpp to rename all .cc files to .cpp
@@ -165,7 +169,7 @@ alias cp='cp -i -p'
 alias mv='mv -i'
 alias rm='rm -i -v'
 
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #eval "$(rbenv init -)"
 if [ -f "/usr/local/share/chruby/chruby.sh" ]; then
   source /usr/local/share/chruby/chruby.sh
@@ -178,3 +182,6 @@ TERMINAL_FLAVOR='$HOME/local/bin/fortune.py'
 if test -f "$TERMINAL_FLAVOR"; then
     echo "$TERMINAL_FLAVOR exists."
 fi
+
+# Created by `pipx` on 2025-05-15 21:29:58
+export PATH="$PATH:/home/tobit/.local/bin"
